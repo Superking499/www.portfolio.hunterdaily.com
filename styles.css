@@ -19,6 +19,7 @@ div.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 div.logo {
@@ -30,22 +31,52 @@ a {
     color: inherit;
     font-size: 125%;
     text-decoration: none;
+    
 }
-div.nav-links {
+.nav-links {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    width: 30%;
 }
 
-div.nav-links a {
+.nav-links a {
     color: inherit;
+    font-size: 125%;
     text-decoration: none;
+    
 }
 
 div.nav-links a:hover {
-    color : inherit;
     text-decoration: underline;
 }
 div.nav-links a:visited {
-    color : inherit;
     text-decoration: none;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20%
+}
+.container img{
+    width: 25%;
+    margin-top:5%;
+    margin-left:10%;
+    border-radius:10%
+}
+.tContainer {
+    display: column;
+}
+.hContainer {
+    display: flex;
+}
+.hContainer h1{
+    font-size: 250%;
+    font-family: Georgia;
+}
+.tContainer h2{
+    margin-top: 5%;
+    font-size: 150%;
+}
+.tContainer p{
+    margin-top: 3%;
 }
