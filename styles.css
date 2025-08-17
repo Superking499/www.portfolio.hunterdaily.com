@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Start of Header*/
 body {
     background: #fff;
     color: #000;
@@ -52,31 +52,64 @@ div.nav-links a:hover {
 div.nav-links a:visited {
     text-decoration: none;
 }
-.container {
+/*End of Header*/
+
+
+/* Front Page Items*/
+.front-page-container {
     display: flex;
     align-items: center;
     gap: 20%
 }
-.container img{
+.front-page-container img{
     width: 25%;
     margin-top:5%;
     margin-left:10%;
     border-radius:10%
 }
-.tContainer {
+.front-page-text-container {
     display: column;
 }
-.hContainer {
+.front-page-header-container {
     display: flex;
 }
-.hContainer h1{
+.front-page-header-container h1{
     font-size: 250%;
     font-family: Georgia;
 }
-.tContainer h2{
+.front-page-text-container h2{
     margin-top: 5%;
     font-size: 150%;
 }
-.tContainer p{
+.front-page-text-container p{
     margin-top: 3%;
 }
+/*End of Front page items*/
+
+/*Start of certificate */
+.certificate-container-left {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+.certificate-container-left img{
+    border: 5px solid #555;
+}
+.certificate-container-left-text {
+    display: column;
+    
+}
+.certificate-container-left-text h1{
+    font-size: 300%;
+    margin-left: 23%;
+}
+.certificate-container-left-text p{
+    text-align: center;
+    margin-right: 25%;
+    margin-top: 5%;
+    font-size: 120%;
+}
+
+/*End of certificates*/
