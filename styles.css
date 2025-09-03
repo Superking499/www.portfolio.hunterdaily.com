@@ -83,6 +83,7 @@ div.nav-links a:visited {
 }
 .front-page-text-container p{
     margin-top: 3%;
+    font-size: 120%;
 }
 /*End of Front page items*/
 
@@ -140,10 +141,48 @@ div.nav-links a:visited {
 .portfolio-container-right {
     display: flex;
     align-items: center;
-    gap: 20%;
-    margin-top: 10%;
-    margin-left: 15%;
+    justify-content: space-between; /* spreads text and video nicely */
+    gap: 5%; /* smaller gap instead of 20% */
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%; /* balance margins */
 }
-.portfolio-container-right iframe{
-    
+
+.portfolio-container-right video {
+    flex: 1; /* let video scale naturally */
+    max-width: 50%; /* prevent it from being too big */
+    height: auto; /* keeps video ratio */
+}
+
+.portfolio-container-right img {
+    flex: 1; /* let video scale naturally */
+    max-width: 50%; /* prevent it from being too big */
+    height: auto; /* keeps video ratio */
+}
+
+.portfolio-container-right-text {
+    flex: 1; /* give text equal space to video */
+    display: flex;
+    flex-direction: column; /* proper syntax */
+    justify-content: center;
+    padding-right: 5%; /* breathing room */
+}
+
+.portfolio-container-right-text h1 {
+    font-size: 250%;
+    margin-bottom: 10px;
+}
+
+.portfolio-container-right-text p {
+    line-height: 1.6; /* adds readability */
+    font-size: 110%;
+}
+/*End of Portfolio Items*/
+
+/*Start of Contacts*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left:18%
 }
